@@ -2,7 +2,11 @@ package knight.brian.spring.boot.aopdemo.dao;
 
 import knight.brian.spring.boot.aopdemo.Account;
 
+import java.util.List;
+
 public interface AccountDAO {
+
+    List<Account> findAccounts();
 
     void addAccount(Account account, boolean isVIP);
 
@@ -15,5 +19,4 @@ public interface AccountDAO {
     public String getServiceCode();
 
     public void setServiceCode(String serviceCode);
-
 }
